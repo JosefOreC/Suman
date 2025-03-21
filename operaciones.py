@@ -1,4 +1,8 @@
-sumando1 = float(input("Primer sumando: "))
-sumando2 = float(input("Segundo sumando: "))
-suma = sumando1+sumando2
-print(f"{sumando1}+{sumando2}={suma}\n¿Es correcto?")
+def suma(sumando1, sumando2):
+    sumando1 = float(sumando1)
+    sumando2 = float(sumando2)
+    suma = sumando1+sumando2
+    return suma
+sumando1=input('Primer sumando: ')
+sumando2=input('Segundo sumando: ')
+print(f"{sumando1}+{sumando2}={suma(sumando1,sumando2)}\n¿Es correcto?")
